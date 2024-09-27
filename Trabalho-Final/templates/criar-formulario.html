@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação</title>
+    <link rel="stylesheet" href="/static/css/criar-formulario.css">
+</head>
+<body>
+
+    <form id="form">
+
+        <label for="titulo" class="label-titulo">Título (Máx 200 caracteres):</label>
+        <input type="text" id="titulo" class="form__input titulo" maxlength="200" placeholder="Insira o título">
+
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" class="form__input descricao" placeholder="Insira a descrição"></textarea>
+
+
+        <div id="perguntas-container"></div>
+
+
+        <button id="btAdicionarCampo">Adicionar Campo</button>
+
+
+        <button id="btEnviar">Enviar</button>
+    </form>
+
+    <script src="/static/js/criar-formulario.js"></script>
+</body>
+</html>
